@@ -18,6 +18,21 @@ class Assignment1
         return avg;
          //Console.WriteLine("The sum is:", sum);
          //Console.WriteLine("The avg is:", avg);
-         
+
+    }
+
+    void display(int[] arr)
+    {
+        int sum=0, avg;
+        for(int i=0; i<arr.Length; i++)
+        {
+            Console.WriteLine("The sum of array is:",sum+arr[i]);
+            Console.WriteLine("The avg of array is:",sum/arr.Length);
+        }
+    }
+    public static void Main()
+    {
+        int[] arr = {5,6,7,3,4,2};
+        dislay(arr);
     }
 }
