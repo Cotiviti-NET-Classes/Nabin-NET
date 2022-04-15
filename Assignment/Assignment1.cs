@@ -20,7 +20,7 @@ class Assignment1
          //Console.WriteLine("The avg is:", avg);
 
     }
-
+//OR
     void display(int[] arr)
     {
         int sum=0, avg;
@@ -30,9 +30,5 @@ class Assignment1
             Console.WriteLine("The avg of array is:",sum/arr.Length);
         }
     }
-    public static void Main()
-    {
-        int[] arr = {5,6,7,3,4,2};
-        dislay(arr);
-    }
+
 }
