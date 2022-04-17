@@ -6,7 +6,7 @@ namespace Assignment1;
 class Assignment1
 {
     int sum=0, avg;
-    void show()
+    int show()
     {
         int [] array={2,3,4,5,6,7};
         for(int i=0; i<array.Length; i++)
@@ -21,7 +21,7 @@ class Assignment1
 
     }
 //OR
-    void display(int[] arr)
+    int display(int[] arr)
     {
         int sum=0, avg;
         for(int i=0; i<arr.Length; i++)
