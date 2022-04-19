@@ -43,9 +43,9 @@ class Employee
 
          }
      }
-     //New method Auto incremented  properties
+     //New method Auto implemented  properties
      public string Name1{get; set;}
-     public char Gender { get; set; } ='M'; //Defaukt value instalization
+     public char Gender { get; set; } ='M'; //Default value instalization
 }
 
 class x
