@@ -10,7 +10,7 @@ namespace Assignment
    public class Teacher: Employee, Isubject
     {
         public string Teacher_ID;
-        public void display()
+        public override void display()
         {
             Console.WriteLine("Computer Science");// Method Overriding
         }
@@ -24,7 +24,7 @@ namespace Assignment
             Console.WriteLine("Department");
         }
     } 
-    class Finamce : Department,Isubject ,Iclass
+    class Finance : Department,Isubject ,Iclass
     {
         public string audit;
         public string fund;
@@ -37,7 +37,8 @@ namespace Assignment
     class Inventory : Department, Iclass
     {
         public string inv_ID;
-        public void show()
+
+        public void show() //@override
         {
             Console.WriteLine("Inventory");
         }
