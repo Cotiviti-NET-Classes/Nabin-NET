@@ -26,7 +26,7 @@ class Vehical
     //Read only Property
     public readonly string name {get;}
     //Write Only Property
-    public string Name
+    public string name
     {
         set{name =value;}
     }
