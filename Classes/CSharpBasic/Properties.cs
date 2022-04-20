@@ -1,6 +1,6 @@
 class person
 {
-    ctor//Shortcup for create constructor
+    ctor//Shortcut for create constructor
     int age;// Internal AM is used for the project
     public string name; //Access Modify public,  private, protected and internal
        //Constraints
