@@ -48,3 +48,10 @@ class FileHandling
        }
 
    }
+
+#Output
+1. The total number of character is:44728.
+2. The total number of word is 7884.
+3. The total number of sentence is 597 .
+5. The total number of vowel is 12933 .
+5. The total number of special character is 10886 .
