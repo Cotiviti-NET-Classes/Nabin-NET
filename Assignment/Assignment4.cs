@@ -24,7 +24,9 @@ class FileHandling
 
         i++;
     }
+      
           int vowel=System.Text.RegularExpressions.Regex.Matches(path.ToLower(),"[aeiou]").Count;
+
 
            //Console.WriteLine(path);  it ll display ur file on console
 
@@ -35,6 +37,8 @@ class FileHandling
            Console.WriteLine($"2. The total number of word is {path.Split(' ').Length}."); // total word
 
            Console.WriteLine($"3. The total number of sentence is {path.Split('.').Length} ."); // total sentence
+           //Console.WriteLine($"5. The total number of vowel is {alp}"); 
+            //Console.WriteLine($"5. The total number of vowel is {digit}");
 
            Console.WriteLine($"5. The total number of vowel is {vowel} .");//total vowel
 
