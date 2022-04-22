@@ -20,7 +20,7 @@ class Vehical
 
     }
    //Two auto-implemented properties
-         public string model{get; private set;}
+         public string model{public get; set;}
          public char color { get; set; } = "Red";
 
     //Read only Property

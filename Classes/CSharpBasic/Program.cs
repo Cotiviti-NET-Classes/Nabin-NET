@@ -1,19 +1,50 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace FileHandlingDemo;
+class FileHandling
+   {
+       public static void Main()
+       {
+         int i,alp, digit, splch;
+         i=alp=digit=splch=0;
+           string path = File.ReadAllText("C:/Users/nkand/Desktop/File.txt");
+  
+        while(i<path.Length)
+        {
+        if((path[i]>='a' && path[i]<='z')|| (path[i]>='A' && path[i]<='Z'))
+        {
+            alp++;
+        }
+        else if(path[i]>='0' && path[i]<='9')
+        {
+            digit++;
+        }
+        else
+        {
+            splch++;
+        }
+
+        i++;
+    }
+      
+          int vowel=System.Text.RegularExpressions.Regex.Matches(path.ToLower(),"[aeiou]").Count;
 
 
-Student s=new Student();  //"Student"() is optional and every class have defult constructor.
-s.name="Hari";
-s.semester="2th";
-s.mobileNumber="9860887799";
+           //Console.WriteLine(path);  it ll display ur file on console
+
+           Console.WriteLine($"1. The total number of character is:{path.Length}."); // show character
+
+           //Console.WriteLine($"The total line is: {path.Split('\r').Length}.");   total line
+
+           Console.WriteLine($"2. The total number of word is {path.Split(' ').Length}."); // total word
+
+           Console.WriteLine($"3. The total number of sentence is {path.Split('.').Length} ."); // total sentence
+           //Console.WriteLine($"5. The total number of vowel is {alp}"); 
+            //Console.WriteLine($"5. The total number of vowel is {digit}");
+
+           Console.WriteLine($"5. The total number of vowel is {vowel} .");//total vowel
+
+           Console.WriteLine($"5. The total number of special character is {splch} .");//total special character
 
 
-Student s1=new()  
-{
-name="Hari",
-semester="1th",
-mobileNumber="0123456789"
-};
+       }
 
-Student s2=new Student("Shyam","3th", "7766554433"); //parameterized constructors
-
+   }
