@@ -3,9 +3,8 @@ class Player
 {
     public static void Main(string[] args)
     {
-        var RawData = File.ReadLines(@"C:\Users\nabin.kandel\OneDrive - Cotiviti\Desktop\players.txt");
+        string[] RawData = File.ReadLines(@"C:\Users\nabin.kandel\OneDrive - Cotiviti\Desktop\players.txt");
 
-        List <Player> player=new List<Player>();
         foreach(var game in RawData)
         {
             var data=game.Split(",");
@@ -39,6 +38,15 @@ class Player
         {
             Console.WriteLine(CG.Name);
         }
+
+        var USAPlayer=player.Where(x=>x.NOC.Contains("USA"));
+        var USAOrder=USAPlayer.OrderBy(x=>x.Sport);
+        foreach(var USAP in USAOrder)
+        {
+            Console.WriteLine(USAP.Name+" , "+USAP.Sport);
+        }
+
+        //var Medal=player.GroupBy(x=>x.NOC).Select(group)
     }
     
 }
