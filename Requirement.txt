@@ -1,0 +1,30 @@
+DropDown:
+All Employee and Add Employee
+
+Database:
+efcore-recommended , dapper, hibernate
+
+Add cli package nuget.org
+
+Follow link
+
+Make constructor with base keyword
+
+//Configure services
+efcore DB provider MSQLITE copy and run
+Program.cs
+builder.Services.AddDBContext<HrDbContext>(options=>options.UseSqlite("Sata sdource=Hr.db"))
+
+**ef migration
+dotnet tool install dotnet-ef -g/ global install hunxa
+dotnet ef migrations add Db_Create//Migration one folder add hunxa
+dotnet ef database update//Update
+
+Add ma form banaune ho and using bootstrap and create form
+
+Form asp controllerasp action meyhod
+input asp-for
+
+
+
+Visual Studio:
