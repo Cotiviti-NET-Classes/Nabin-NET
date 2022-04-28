@@ -1,0 +1,6 @@
+[submodule "Nabin-NET"]
+	path = Nabin-NET
+	url = https://github.com/Cotiviti-NET-Classes/Nabin-NET.git
+[submodule "HumanResource"]
+	path = HumanResource
+	url = https://github.com/Cotiviti-NET-Classes/Nabin-NET.git

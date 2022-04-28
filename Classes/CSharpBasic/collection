@@ -1,0 +1,20 @@
+class Collection
+{
+    List<string> a=new();
+    stack<string> b=new();//LIFO scope less
+    Queue<int> =c new();//FIFO scope less
+    Dictionary<string, int> d=new();//Key value pair which dosen't store duplicate value
+    void Learn()
+    {
+        a.Add("Nabin");
+        a.Remove("Rakesh");
+        
+        b.push("Nepali");
+        b.pop();
+
+        c.Enqueue(12);
+        c.Dequeue();//because 
+
+        d.Add("a",45)
+    }
+}
